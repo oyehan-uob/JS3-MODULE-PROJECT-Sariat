@@ -34,10 +34,10 @@ dropDown.addEventListener("change", function(e) {
   render(selectOption);
   const count = document.getElementById('count');
   count.textContent = 'Displaying 1/73 episodes';
-  if (e.target.value === 'None...'){
+  if (e.target.value === 'None...'){ //to display none
     count.textContent = "Displaying 0/73 episodes";
   }
-  else if (e.target.value === 'Select all'){
+  else if (e.target.value === 'Select all'){ //to display all as a way to go back to the whole page
     render(getAllEpisodes());
     count.textContent = "Displaying 73/73 episodes";
   }
